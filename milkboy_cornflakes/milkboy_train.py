@@ -77,7 +77,7 @@ def main():
     batch_size = 20
     learning_rate = 0.01
     criterion = nn.CrossEntropyLoss()
-    fold = KFold(n_splits=5, shuffle=True, random_state=1234)
+    kf = KFold(n_splits=5, shuffle=True, random_state=1234)
 
     # train & validation
     cv = 0
